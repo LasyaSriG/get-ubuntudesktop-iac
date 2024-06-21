@@ -1,7 +1,7 @@
 variable "project_id" {
 description = "custom-svc"
 type = string
-default = "sumanth-97"
+default = "lasya-ganta-14"
 }
 
 variable "roles" {
