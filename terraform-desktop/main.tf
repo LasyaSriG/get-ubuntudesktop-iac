@@ -1,10 +1,10 @@
 provider "google" {
-  project     = "sumanth-97"
+  project     = "lasya-ganta-14"
 }
 
 terraform {
   backend "gcs" {
-    bucket  = "sumanth-state-backup-bucket"
+    bucket  = "lasyas-bucket"
     prefix  = "terraform-desktop/state"
   }
 }
