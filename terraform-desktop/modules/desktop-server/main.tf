@@ -17,8 +17,8 @@ resource "google_compute_instance" "desktop-server" {
   }
 
   network_interface {
-    network    = "projects/sumanth-97/global/networks/custom-vpc"
-    subnetwork = "projects/sumanth-97/regions/us-west1/subnetworks/desktop-server-subnet"
+    network    = "projects/lasya-ganta-14/global/networks/custom-vpc"
+    subnetwork = "projects/lasya-ganta-14/regions/us-west1/subnetworks/desktop-server-subnet"
 
     access_config {
       // Ephemeral IP
@@ -30,7 +30,7 @@ resource "google_compute_instance" "desktop-server" {
   }
 
   service_account {
-    email  = "custom-svc@sumanth-97.iam.gserviceaccount.com"
+    email  = "custom-svc@lasya-ganta-14.iam.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
 
@@ -60,8 +60,8 @@ resource "google_compute_instance" "apache2" {
   }
 
   network_interface {
-    network    = "projects/sumanth-97/global/networks/custom-vpc"
-    subnetwork = "projects/sumanth-97/regions/us-west1/subnetworks/desktop-server-subnet"
+    network    = "projects/lasya-ganta-14/global/networks/custom-vpc"
+    subnetwork = "projects/lasya-ganta-14/regions/us-west1/subnetworks/desktop-server-subnet"
 
     access_config {
       // Ephemeral IP
@@ -73,7 +73,7 @@ resource "google_compute_instance" "apache2" {
   }
 
   service_account {
-    email  = "custom-svc@sumanth-97.iam.gserviceaccount.com"
+    email  = "custom-svc@lasya-ganta-14.iam.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
 
